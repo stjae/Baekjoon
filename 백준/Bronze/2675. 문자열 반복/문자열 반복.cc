@@ -12,14 +12,11 @@ int main(int argc, char const *argv[])
     std::string s;
     std::string result[t];
 
-    for (int i = 0; i < t; i++)
-    {
-        std::cin >> r[i] >> s;
-        result[i] = std::string(s);
-    }
-
     for (int j = 0; j < t; j++)
     {
+        std::cin >> r[j] >> s;
+        result[j] = std::string(s);
+
         length = result[j].length();
         const char *stoc = result[j].c_str();
         for (int k = 0; k < length; k++)
