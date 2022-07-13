@@ -18,18 +18,12 @@ int main(int argc, char const *argv[])
         count++;
     }
 
-    int prevIndex = -100;
     for (int i = 0; i < length; i++)
     {
         for (int j = 0; j < 8; j++)
         {
             if (dialArray[j].find(str[i]) != std::string::npos)
-            {
-                // if ((j - 1) == prevIndex || (j + 1) == prevIndex)
-                //     time += 1;
                 time += (j + 3);
-                prevIndex = j;
-            }
         }
     }
 
